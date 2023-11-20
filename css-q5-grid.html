@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            border: 2px solid blue;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            height: 350px;
+            width: 600px;;
+        }
+        #container div {
+            border: 2px solid blue;
+        }
+        .one {
+            grid-area: 1/1/2/4;
+        }
+        .two {
+            grid-area: 2/1/4/2;
+        }
+        .three {
+            grid-area: 2/2/3/3;
+        }
+        .four {
+            grid-area: 2/3/3/4;
+        }
+        .five {
+            grid-area: 3/2/4/4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="one">heading</div>
+        <div class="two">menu</div>
+        <div class="three">section 1</div>
+        <div class="four">section 2</div>
+        <div class="five">footer</div>
+    </div>
+</body>
+</html>

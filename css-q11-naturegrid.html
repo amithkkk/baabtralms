@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: #fed700;
+            height: 600px;
+            width: 1050px;
+            display: grid;
+        }
+        #container div{
+            border: 2px solid blue;
+            margin: 2px;
+        }
+        .heading {
+            grid-area: 1/1/1/10;
+        }
+        .loremtext{
+            grid-area: 2/1/6/5;
+        }
+        .sidebar{
+            grid-area: 2/5/9/10;
+        }
+        .wrapper{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            grid-area: 5/1/9/5;
+        }
+        .wrapper div{
+            border: 1px solid black;
+            display: flex;
+            width: 50px;
+            height: 50px;
+        }
+        .footer{
+            grid-area: 9/1/10/10;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="heading">Heading</div>
+        <div class="loremtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quae magni quibusdam
+            accusamus
+            laudantium voluptatum impedit, ipsa tempore est laborum. Quos voluptatem nobis facilis voluptatibus impedit
+            nam distinctio itaque maiores reprehenderit animi nihil quibusdam dolorem, velit optio quaerat vel sint
+            totam molestias. In unde mollitia odit dolores molestias, illum repellat.</div>
+        <div class="sidebar">Side Bar</div>
+        <div class="wrapper">
+            <img src="nature1.jpg" alt="">
+            <img src="nature1.jpg" alt="">
+            <img src="nature1.jpg" alt="">
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

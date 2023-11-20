@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            border: 2px solid blue;
+            display: grid;
+            height: 350px;
+            width: 600px;
+
+            
+        }
+        #container div {
+            border: 2px solid blue;
+        }
+        .header {
+            grid-area: 1/1/6/5;
+        }
+        .para {
+            grid-area: 2/1/4/4;
+            width: 500px;
+        }
+        .side {
+            grid-area: 2/4/5/5;
+        }
+        #flexg {
+            display: flex;
+            width: 200px;
+        }
+        .img1 {
+            grid-area: 4/1/6/2;
+        }
+        .footer {
+            grid-area: 6/1/6/5;
+        }
+        .wraper{
+            display: flex;
+            flex: wrap;
+            flex-direction: row;
+            margin: 15px;
+            width: 500px;
+            grid-area: 3/1/5/3;
+            height: 100px;
+            position: relative;
+            top: 90px;
+            justify-content: space-between;
+            border: 5px solid white;
+        }
+        .wraper div{
+            height: 95px;
+            width: 100px;
+            margin: ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header">heading</div>
+        <div class="para">paragraph</div>
+        <div class="side">sidebar</div>
+        <div class="wraper">
+            <div>img1</div>
+            <div>img2</div>
+            <div>img3</div>
+        </div>
+        <div class="footer">footer</div>
+
+    </div>
+</body>
+</html>
